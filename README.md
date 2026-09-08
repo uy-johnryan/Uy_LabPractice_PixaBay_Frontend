@@ -1,0 +1,2 @@
+## Security note: API Key
+Excluding `config.js` keeps the API key out of the GitHub history, which is standard practice. However, because this is a client-side application, it does not hide the key from someone using your live site.
