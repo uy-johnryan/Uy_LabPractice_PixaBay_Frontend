@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    background-color: #111;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main container */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #333;
+    border-radius: 24px;
+    background-color: #151515;
+}
+
+
+/* Heading */
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #eee;
+}
+
+h2 {
+    margin: 4px 0 32px;
+    font-size: 26px;
+    color: #aaa;
+}
+
+
+/* Search area */
+
+.search-area {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+#searchInput {
+    flex: 1;
+}
+
+#searchType {
+    width: 200px;
+}
+
+.search-area input,
+.search-area select,
+.search-area button {
+    height: 72px;
+    padding: 0 24px;
+
+    background-color: #151515;
+    color: #ccc;
+
+    border: 1px solid #444;
+    border-radius: 16px;
+
+    font-size: 24px;
+}
+
+
+/* Buttons */
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+    border-color: #666;
+}
+
+
+/* Challenge buttons */
+
+.challenge-area {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.challenge-area button {
+    padding: 16px 28px;
+
+    background-color: #151515;
+    color: #ccc;
+
+    border: 1px solid #444;
+    border-radius: 16px;
+
+    font-size: 22px;
+}
+
+
+/* Status */
+
+#status {
+    min-height: 30px;
+    margin-bottom: 16px;
+
+    font-size: 20px;
+    color: #999;
+}
+
+
+/* Results */
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Placeholder / result card */
+
+.result-placeholder,
+.result-card {
+    min-height: 240px;
+
+    background-color: #191919;
+
+    border: 1px solid #333;
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+
+/* Images */
+
+.result-card img {
+    width: 100%;
+    height: 240px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* Videos */
+
+.result-card video {
+    width: 100%;
+    height: 240px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* Result information */
+
+.result-info {
+    padding: 12px;
+
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+/* Placeholder text */
+
+.result-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #888;
+    font-size: 24px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .search-area {
+        flex-direction: column;
+    }
+
+    .search-area input,
+    .search-area select,
+    .search-area button {
+        width: 100%;
+    }
+
+    .challenge-area {
+        flex-direction: column;
+    }
+
+    .challenge-area button {
+        width: 100%;
+    }
+
+    .results {
+        grid-template-columns: 1fr;
+    }
+}

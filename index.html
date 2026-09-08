@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixabay Challenge Viewer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Pixabay Challenge Viewer</h1>
+        <h2>Search and explore images and videos from Pixabay</h2>
+
+        <!-- Search -->
+        <div class="search-area">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search term input"
+            >
+
+            <select id="searchType">
+                <option value="photo">Photo</option>
+                <option value="video">Video</option>
+            </select>
+
+            <button id="searchButton">Search</button>
+
+        </div>
+
+
+        <!-- Challenges -->
+        <div class="challenge-area">
+
+            <button id="rocketButton">Rocket Launch</button>
+
+            <button id="basketballButton">Basketball</button>
+
+            <button id="forestButton">Forest</button>
+
+            <button id="roadForestButton">Road Forest</button>
+
+        </div>
+
+
+        <!-- Status -->
+        <div id="status"></div>
+
+
+        <!-- Results -->
+        <div id="results" class="results">
+
+            <div class="result-placeholder">result</div>
+            <div class="result-placeholder">result</div>
+            <div class="result-placeholder">result</div>
+
+        </div>
+
+    </main>
+
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
